@@ -6,13 +6,58 @@ body{
 
 h1{
     font-family: "Indie Flower", Arial, Helvetica;
+    text-shadow: 0px 0px 40px black;
+}
+
+div#gridPanel{
+    display: flex;
+}
+
+div#gridConfig{
+    width: 300px;
+    height: 75px;
+    font-family: monospace;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+.slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 200px;
+    margin: 0;
+    justify-self: center;
+    background: rgb(255, 255, 255);
+    height: 10px;
+    border-radius: 10px;
 }
 
 div#grid{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: black;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 207, 207);
 }
 
+div.gridBlocks{
+    flex-grow: 1; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 207, 207)
+}
+
+div.gridRows{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
