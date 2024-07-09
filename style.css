@@ -6,11 +6,17 @@ body{
 
 h1{
     font-family: "Indie Flower", Arial, Helvetica;
-    text-shadow: 0px 0px 40px black;
 }
 
 div#gridPanel{
     display: flex;
+}
+
+div#gridSidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
 }
 
 div#gridConfig{
@@ -28,7 +34,7 @@ div#gridConfig{
 }
 
 .slider{
-    -webkit-appearance: none;  /* Override default CSS styles */
+    -webkit-appearance: none; 
     appearance: none;
     width: 200px;
     margin: 0;
@@ -60,4 +66,50 @@ div.gridRows{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+}
+
+div#colorPicker{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    font-family: monospace;
+    margin-right: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    gap: 20px;
+}
+
+div#colorButtons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button#random{
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 2em;
+    margin-top: 10px;
+    background: radial-gradient(circle, rgb(41, 250, 86) 0%, rgb(70, 225, 252) 100%);
+}
+
+button{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-style: none;
 }

@@ -13,10 +13,28 @@
 <body>
     <h1>Etch-a-Sketch</h1>
     <div id="gridPanel">
-        <div id="gridConfig">
-            <p id="sizeText"></p>
-            <div class="slidecontainer">
-                <input type="range" min="5" max="100" value="5" class="slider" id="myRange">
+        <div id="gridSidebar">
+            <div id="gridConfig">
+                <p id="sizeText"></p>
+                <div class="slidecontainer">
+                    <input type="range" min="5" max="100" value="32" class="slider" id="myRange">
+                </div>
+            </div>
+            <div id="colorPicker">
+                <p>Color picker</p>
+                <div id="colorButtons">
+                    <button style="background-color:rgb(0, 0, 0)" onclick="changeColor('rgb(0, 0, 0)')"></button>
+                    <button style="background-color:rgb(255, 0, 0)" onclick="changeColor('rgb(255, 0, 0)')"></button>
+                    <button style="background-color:rgb(0, 255, 0)" onclick="changeColor('rgb(0, 255, 0)')"></button>
+                    <button style="background-color:rgb(0, 0, 255)" onclick="changeColor('rgb(0, 0, 255)')"></button>
+                    <button style="background-color:rgb(255, 255, 0)" onclick="changeColor('rgb(255, 255, 0)')"></button>
+                    <button style="background-color:rgb(0, 255, 255)" onclick="changeColor('rgb(0, 255, 255)')"></button>
+                    <button style="background-color:rgb(255, 0, 255)" onclick="changeColor('rgb(255, 0, 255)')"></button>
+                    <button style="background-color:rgb(255,128,0)" onclick="changeColor('rgb(255,128,0)')"></button>
+                    <button style="background-color:rgb(0,224,84)" onclick="changeColor('rgb(0,224,84)')"></button>
+                    <button style="background-color:rgb(64,188,244)" onclick="changeColor('rgb(64,188,244)')"></button>
+                    <button id="random" onclick="enableRandomMode()">random</button>
+                </div>
             </div>
         </div>
         <div id="grid"></div>
